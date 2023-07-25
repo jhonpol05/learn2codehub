@@ -13,7 +13,7 @@ html, body{
 }
 
 /* header navbar design start */
-.logo, .Mobile_menu, label, ul li a{
+.logo, .Mobile_menu, #Mobile_Menu, ul li a{
     color: white;
 }
 .logo{
@@ -32,8 +32,9 @@ header{
 input[type=checkbox]{
     visibility: hidden;
 }
-label{
+#Mobile_Menu , #Mobile_Menu_exit{
     display: none;
+    font-size: 20px;
 }
 nav ul{
     display: flex;
@@ -160,38 +161,45 @@ footer{
 
 @media screen and (max-width: 640px){
 
-    /* responsive nav bar start */
-    label{
+     /* responsive nav bar start */
+     #Mobile_Menu{
         display: block;
     }
     nav{
-        width: 150px;
+        width: 50vw;
+        height: 100vh;
         text-align: left;
         position: absolute;
         background: #0066FF;
         top: 0px;
         right: 0;
-        border-radius: 5px;
         visibility: none;
         opacity: 0;
         transition: 0.3s ease;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
+        
     }
-    nav ul li a, nav label{
+    nav ul li a, nav #Mobile_Menu{
         color: #fff;
     }
     nav ul li a:hover{
         color: #fff;
     }
     nav ul li a i{
-        margin-left: 20px;
+        margin-left: 30px;
     }
-    label{
+    #Mobile_Menu_exit{
+        color: #fff;
         font-size: 24px;
-    }
-    nav label{
         text-align: right;
-        padding-right: 10px;
+        display: block;
+        padding: 10px 30px 0px 0px;
+        margin-bottom: 4px;
+    }
+    nav #Mobile_Menu{
+        text-align: right;
+        padding-right: 30px;
+        padding-top: 10px;
     }
     nav ul{
         flex-direction: column;
@@ -201,6 +209,7 @@ footer{
         visibility: visible;
         opacity: 1;
     }
+
     /* responsive nav bar end */
 
     /* responsive tutorial seciton start */
