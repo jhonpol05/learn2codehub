@@ -1,0 +1,433 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.logo, .Mobile_menu, #Mobile_Menu, ul li a{
+    color: white;
+}
+.logo{
+    font-size: clamp(0.46875rem, 0.3516rem + 0.375vw, 0.5625rem);
+}
+header{
+    position: fixed;
+    width: 100%;
+    background: #0066FF;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 4px -2px rgba(0,0,0,.2);
+    padding: 10px 30px;
+}
+input[type=checkbox]{
+    visibility: hidden;
+}
+#Mobile_Menu , #Mobile_Menu_exit{
+    display: none;
+    font-size: 20px;
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: clamp(0.9375rem, 0.7813rem + 0.5vw, 1.0625rem);
+}
+nav ul li a i{
+    margin-right: 6px;
+}
+nav ul li a:hover{
+   color: #434242;
+   transition: 0.3s;
+}
+section{
+    display: inline-block;
+    width: 100%;
+    height: 100vh;
+}
+/* home design start */
+.home-section{
+    background-image: url("img/layered-waves-haikei-home.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+.home-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 50px 0px 50px;
+    padding: 66px;
+}
+.description{
+    font-size: clamp(0.875rem, 0.4063rem + 1.5vw, 1.2rem);
+    flex-direction: column;
+    color: white;
+    margin-top: 60px;
+}
+.description h2{
+    font-size: clamp(1.25rem, 0.625rem + 2vw, 1.65rem);
+    margin-bottom: 10px;
+}
+.description span{
+    color: #0066FF;
+}
+.description a{
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    font-size: clamp(0.625rem, 0.4688rem + 0.5vw, 0.75rem);
+    letter-spacing: 1px;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+}
+.description a:hover{
+    color: black;
+    background-color: white;
+    transition: 0.5s;
+}
+img{
+    width: 100%;
+    height: 60vh;
+    margin-top: 40px;
+}
+/* home design end  */
+
+/* about design start */
+.about-section{
+    background-image: url("img/layered-waves-haikei.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+    min-height: 100vh;
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    margin: 120px 100px 0px 100px;
+}
+.about-content h1{
+    color: white;
+    font-size: clamp(1.125rem, 0.6563rem + 1.5vw, 1.5rem);
+}
+.about-content p{
+    text-align: justify;
+    font-size: clamp(0.875rem, 0.4063rem + 1.5vw, 1.2rem);
+    margin-top: 20px;
+}
+.about-content a{
+    color: #fff;
+    background-color: #0066FF;
+    font-weight: bold;
+    border: 2px solid #fff;
+    font-size: clamp(0.625rem, 0.4688rem + 0.5vw, 0.75rem);
+    letter-spacing: 1px;
+    border-radius: 40px;
+    padding: 10px 20px 11px 20px;
+    text-decoration: none;
+    margin: 20px 0 20px 0;
+}
+.about-content a:hover{
+    color: black;
+    background-color: #fff;
+    transition: 0.5s ;
+    
+}
+/* about design end  */
+
+/* contact section start */
+.contact-section{
+    background-color: #22252A;
+    height: auto;
+    min-height: 100vh;
+}
+.contact_container{
+    width: 70%;
+    margin: 50px auto;
+    margin-top: 80px;
+}
+.contact-box{
+    background-color: #fff;
+    display: flex;
+    
+}
+.contact-left{
+    color: #fff;
+    background-color: #0066FF;
+    flex-basis: 48%;
+    padding: 40px;
+    
+}
+.contact-right{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    
+}
+.contact-right h3{
+    margin-bottom: 20px;
+    color: #22252A;
+}
+.contact_container h1{
+    color: #fff;
+    font-size: clamp(1.125rem, 0.3438rem + 2.5vw, 1.75rem);
+    margin-bottom: 10px;
+    text-align: center;
+} 
+.contact_container p{
+    color: #fff;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+label{
+    margin-bottom: 5px;
+    display: block;
+    color: #434242;
+    font-size: 14px;
+}
+.input-table{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.input-group .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 120%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+tr td:first-child{
+    padding-right: 5px;
+}
+tr td{
+    padding-top: 20px;
+    width: 70%;
+}
+table tr td i{
+    margin-right: 5px;
+}
+button{
+    background-color: #0066FF;
+    width: 120px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: clamp(0.625rem, 0.4688rem + 0.5vw, 0.75rem);
+    height: 40px;
+    border-radius: 30px;
+    margin-top: 14px;
+    box-shadow: 0px 5px 15px 0px rgb(0, 102, 255,0.3);
+}
+button:hover{
+    background-color: #fff;
+    color: #191B1F;
+    transition: 0.5s;
+}
+/* contact section end */
+
+footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 12px;
+    font-size: clamp(0.8125rem, 0.5781rem + 0.75vw, 1rem);
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+
+    /* responsive nav bar start */
+    #Mobile_Menu{
+        display: block;
+    }
+    nav{
+        width: 50vw;
+        height: 100vh;
+        text-align: left;
+        position: absolute;
+        background: #0066FF;
+        top: 0px;
+        right: 0;
+        visibility: none;
+        opacity: 0;
+        transition: 0.3s ease;
+        padding-bottom: 40px;
+        
+    }
+    nav ul li a, nav #Mobile_Menu{
+        color: #fff;
+    }
+    nav ul li a:hover{
+        color: #fff;
+    }
+    nav ul li a i{
+        margin-left: 30px;
+    }
+    #Mobile_Menu_exit{
+        color: #fff;
+        font-size: 24px;
+        text-align: right;
+        display: block;
+        padding: 10px 30px 0px 0px;
+        margin-bottom: 10px;
+    }
+    nav #Mobile_Menu{
+        text-align: right;
+        padding-right: 30px;
+        padding-top: 10px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+    input:checked ~ nav{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* responsive nav bar end */
+
+    /* responsive home start  */
+    .home-section{
+        background-image: none;
+        background-color: #22252A;
+    }
+    .home-content{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px  0px;
+        margin-top: 20px;
+        
+    }
+    .description{
+        text-align:  center;
+        color: white;
+    }
+    .description h2{
+        text-align: left;
+    }
+    .description p{
+        margin-top: 12px;
+        text-align: justify;
+    }
+    .description a{
+        margin-top: 20px;
+    }
+    img{
+        margin-top: 20px;
+        width: 100%;
+        height: 34vh;
+        
+    }
+    /* responsive home end  */
+
+    /* responsive about start */
+    .about-section{
+        background-image: none;
+        background-color: #0066FF;
+    }
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 70px 0px 0px 0px;
+    }
+    .about-content p{
+        margin: 20px 40px 0 40px;
+        text-align: justify;
+    }
+    /* responsive about end */
+    
+    /* responsive contact start */
+    .contact_container{
+        width: 95%;
+        
+    }
+    .contact-box{
+        background-color: #fff;
+        display: block;
+        border-radius: 0px;
+    }
+    .contact-left{
+        display: none;
+    }
+    .contact-right{
+        padding: 20px 30px;
+        
+    }
+    .contact-right h3{
+        display: none;
+    }
+    .contact-right label{
+        margin-top: 20px;
+    }
+    label{
+        margin-bottom: 5px;
+        display: block;
+        color: #434242;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .input-table{
+        display: block;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+    input{
+        width: 100%;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+    }
+    textarea{
+        width: 100%;
+        border: 1px solid #ccc;
+        outline: none;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    button{
+        width: 90px;
+        height: 36px;
+    }
+    /* responsive contact end */
+    
+
+}

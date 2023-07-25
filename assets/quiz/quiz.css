@@ -1,0 +1,224 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    background-color: #22252A;
+    justify-content: center;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.logo, .Mobile_menu, #Mobile_Menu, ul li a{
+    color: white;
+}
+.logo{
+    font-size: clamp(0.46875rem, 0.3516rem + 0.375vw, 0.5625rem);
+}
+header{
+    position: fixed;
+    width: 100%;
+    background: #0066FF;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 4px -2px rgba(0,0,0,.2);
+    padding: 10px 30px;
+}
+input[type=checkbox]{
+    visibility: hidden;
+}
+#Mobile_Menu , #Mobile_Menu_exit{
+    display: none;
+    font-size: 20px;
+}
+nav ul{
+    display: flex;
+    gap: 50px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: clamp(0.9375rem, 0.7813rem + 0.5vw, 1.0625rem);
+}
+nav ul li a i{
+    margin-right: 6px;
+}
+nav ul li a:hover{
+   color: #434242;
+   transition: 0.3s;
+}
+
+/* quiz design start */
+.questions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22vh;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    width: 56%;
+    padding: 50px;
+    font-size: clamp(0.875rem, 0.7188rem + 0.5vw, 1rem);
+    border-radius: 5px;
+    display: none;
+  }
+  .container span{
+    color: #434242;
+    font-weight: bold;
+  }
+  .container p {
+    margin-bottom: 10px;
+  }
+  
+  input[type="radio"] {
+    margin-top: 15px;
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #0066FF;
+    color: white;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    width: 100%;
+    padding: 6px 10px;
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px rgb(0, 102, 255,0.3);
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: #fff;
+    color: #191B1F;
+    transition: 0.5s;
+}
+
+/* for the result container */
+#resultDiv{
+    width: 30%;
+    text-align: center;
+    
+}
+#resultDiv h1{
+    font-size: 22px;
+    font-weight: bold;
+    color: #22252A;
+    margin-bottom: 20px;
+}
+#resultDiv .close-button{
+    background-color: #0066FF;
+    color: white;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    width: 100%;
+    padding: 6px 10px;
+    margin-top: 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 15px 0px rgb(0, 102, 255,0.3);
+    cursor: pointer;
+}
+#resultDiv .close-button:hover{
+    background-color: #fff;
+    color: #191B1F;
+    transition: 0.5s;
+}
+/* quiz design end */
+
+
+
+
+@media screen and (max-width: 640px){
+    /* responsive nav bar start */
+    #Mobile_Menu{
+        display: block;
+    }
+    nav{
+        width: 50vw;
+        height: 100vh;
+        text-align: left;
+        position: absolute;
+        background: #0066FF;
+        top: 0px;
+        right: 0;
+        visibility: none;
+        opacity: 0;
+        transition: 0.3s ease;
+        padding-bottom: 40px;
+        
+    }
+    nav ul li a, nav #Mobile_Menu{
+        color: #fff;
+    }
+    nav ul li a:hover{
+        color: #fff;
+    }
+    nav ul li a i{
+        margin-left: 30px;
+    }
+    #Mobile_Menu_exit{
+        color: #fff;
+        font-size: 24px;
+        text-align: right;
+        display: block;
+        padding: 10px 30px 0px 0px;
+        margin-bottom: 4px;
+    }
+    nav #Mobile_Menu{
+        text-align: right;
+        padding-right: 30px;
+        padding-top: 10px;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 20px;
+    }
+    input:checked ~ nav{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* responsive nav bar end */
+
+    /* responsive question box start */
+    .container{
+        width: 100%;
+        min-height: 90vh;
+        padding: 30px;
+        margin-top: -80px;
+        text-align: justify;
+        
+    }
+    .container p{
+        margin: 40px 0px 10px 0px;
+    }
+    #resultDiv{
+        width: 90%;
+        min-height: 10vh;
+        margin-top: 15px;
+    }
+    #resultDiv p{
+        margin-top: 0px;
+    }
+    /* responsive question box end */
+}

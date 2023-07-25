@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="../../img/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2cd579dbd9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../quiz/quiz.css">
+    <title>Quiz</title>
+</head>
+<body>
+
+    <!-- start of header  -->
+    <header>
+        <div class="logo">
+            <h1>Learn2CodeHub</h1>
+        </div>
+        <input type="checkbox" id="Mobile_Menu">
+        <label for="Mobile_Menu" id="Mobile_Menu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav>
+            <ul>
+                <label for="Mobile_Menu" id="Mobile_Menu_exit">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <li><a href="../../index.html"><i class="fa-sharp fa-solid fa-house" style="color: #ffffff;"></i>Home</a></li>
+                <li><a href="../topic/topics.html"><i class="fa-solid fa-book-open-reader" style="color: #ffffff;"></i>Tutorials</a></li>
+                <li><a href="../quiz/quiz.html"><i class="fa-solid fa-file-pen" style="color: #ffffff;"></i>Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End of header  -->
+
+    <!-- Start of Questions -->
+
+    <div class="questions">
+        <!-- Question 1 -->
+            <div class="container">
+                <p><span>Q1.</span> What is JavaScript?</p>
+                <input type="radio" name="question1" id="correct1">a. JavaScript is a scripting language used to make the website interactive. <br>
+                <input type="radio" name="question1">b. JavaScript is an assembly language used to make the website interactive.<br>
+                <input type="radio" name="question1">c. JavaScript is a compiled language used to make the website interactive.<br>
+                <input type="radio" name="question1">d. None of the mentioned.<br>
+                <button class="next-btn" onclick="next(1)">Next</button>
+            </div>
+        
+        <!-- Question 2 -->
+        <div class="container">
+            <p><span>Q2.</span> What does HTML stand for?</p>
+            <input type="radio" name="question2" id="correct2">a. HyperText Markup Language.<br>
+            <input type="radio" name="question2">b. HyperText Machine Language.<br>
+            <input type="radio" name="question2">c. HyperText Marking Language.<br>
+            <input type="radio" name="question2">d. HighText Marking Language.<br>
+            <button class="next-btn" onclick="next(2)">Next</button>
+        </div>
+        <!-- Question 3  -->
+        <div class="container">
+            <p><span>Q3.</span> Which of the following tag is used to embed CSS in HTML page?</p>
+            <input type="radio" name="question3">a. Tag<br>
+            <input type="radio" name="question3">b. Id<br>
+            <input type="radio" name="question3" id="correct3">c. Class<br>
+            <input type="radio" name="question3">d. Both class and tag<br>
+            <button class="next-btn" onclick="next(3)">Next</button>
+        </div>
+    <!-- Question 4 -->
+        <div class="container">
+            <p><span>Q4.</span> Which of the following is used to read an HTML page and render it?</p>
+            <input type="radio" name="question4">a. Web server<br>
+            <input type="radio" name="question4">b. Web network<br>
+            <input type="radio" name="question4" id="correct4">c. Web browser<br>
+            <input type="radio" name="question4">d. Web matrix<br>
+            <button class="next-btn" onclick="next(4)">Next</button>
+        </div>
+    
+        <!-- Question 5 -->
+        <div class="container">
+            <p><span>Q5.</span> Which of the following is correct about JavaScript?</p>
+            <input type="radio" name="question5" id="correct5">a. JavaScript is an Object-Based language<br>
+            <input type="radio" name="question5">b. JavaScript is Assembly-language<br>
+            <input type="radio" name="question5">c. JavaScript is an Object-Oriented language<br>
+            <input type="radio" name="question5">d. JavaScript is a High-level language<br>
+            <button class="next-btn" onclick="next(5)">Next</button>
+        </div>
+    
+        <!-- Question 6 -->
+        <div class="container">
+            <p><span>Q6.</span> Which of the following is not JavaScript data types?</p>
+            <input type="radio" name="question6">a. Null type<br>
+            <input type="radio" name="question6">b. Undefined type<br>
+            <input type="radio" name="question6">c. Number type<br>
+            <input type="radio" name="question6" id="correct6">d. All of the mentioned<br>
+            <button class="next-btn" onclick="next(6)">Next</button>
+        </div>
+    
+        <!-- Question 7 -->
+        <div class="container">
+            <p><span>Q7.</span> Where is Client-side JavaScript code embedded within HTML documents?</p>
+            <input type="radio" name="question7">a. A URL that uses the special javascript:code<br>
+            <input type="radio" name="question7" id="correct7">b. A URL that uses the special javascript:protocol<br>
+            <input type="radio" name="question7">c. A URL that uses the special javascript:encoding<br>
+            <input type="radio" name="question7">d. A URL that uses the special javascript:stack<br>
+            <button class="next-btn" onclick="next(7)">Next</button>
+        </div>
+    
+        <!-- Question 8 -->
+        <div class="container">
+            <p><span>Q8.</span> Which of the following has introduced text, list, box, margin, border, color, and background properties?</p>
+            <input type="radio" name="question8">a. HTML<br>
+            <input type="radio" name="question8">b. PHP<br>
+            <input type="radio" name="question8" id="correct8">c. CSS<br>
+            <input type="radio" name="question8">d. Ajax<br>
+            <button class="next-btn" onclick="next(8)">Next</button>
+        </div>
+    
+        <!-- Question 9 -->
+        <div class="container">
+            <p><span>Q9.</span> Which of the following CSS framework is used to create a responsive design?</p>
+            <input type="radio" name="question9">a. Django<br>
+            <input type="radio" name="question9">b. Rails<br>
+            <input type="radio" name="question9">c. Larawell<br>
+            <input type="radio" name="question9" id="correct9">d. Bootstrap<br>
+            <button class="next-btn" onclick="next(9)">Next</button>
+        </div>
+    
+        <!-- Question 10 -->
+        <div class="container">
+            <p><span>Q10.</span> What is DOM in HTML?</p>
+            <input type="radio" name="question10">a. Language dependent application programming<br>
+            <input type="radio" name="question10">b. Hierarchy of objects in ASP.NET<br>
+            <input type="radio" name="question10">c. Application programming interface<br>
+            <input type="radio" name="question10" id="correct10">d. Convention for representing and interacting with objects in HTML documents<br>
+            <button class="next-btn" onclick="next(10)">Next</button>
+        </div>
+    
+        <!-- Question 11 -->
+        <div class="container">
+            <p><span>Q11.</span> In which part of the HTML metadata is contained?</p>
+            <input type="radio" name="question11" id="correct11">a. head tag<br>
+            <input type="radio" name="question11">b. title tag<br>
+            <input type="radio" name="question11">c. html tag<br>
+            <input type="radio" name="question11">d. body tag<br>
+            <button class="next-btn" onclick="next(11)">Next</button>
+        </div>
+    
+        <!-- Question 12 -->
+        <div class="container">
+            <p><span>Q12.</span> Which of the following object is the main entry point to all client-side JavaScript features and APIs?</p>
+            <input type="radio" name="question12">a. Position<br>
+            <input type="radio" name="question12" id="correct12">b. Window<br>
+            <input type="radio" name="question12">c. Standard<br>
+            <input type="radio" name="question12">d. Location<br>
+            <button class="next-btn" onclick="next(12)">Next</button>
+        </div>
+    
+        <!-- Question 13 -->
+        <div class="container">
+            <p><span>Q13.</span> Which of the following can be used to call a JavaScript Code Snippet?</p>
+            <input type="radio" name="question13" id="correct13">a. Function/Method<br>
+            <input type="radio" name="question13">b. Preprocessor<br>
+            <input type="radio" name="question13">c. Triggering Event<br>
+            <input type="radio" name="question13">d. RMI<br>
+            <button class="next-btn" onclick="next(13)">Next</button>
+        </div>
+    
+        <div class="container">
+            <p><span>Q14.</span> Which of the following explains correctly what happens when a JavaScript program is developed on a Unix Machine?</p>
+            <input type="radio" name="question14" id="correct14">a. It will work perfectly well on a Windows Machine<br>
+            <input type="radio" name="question14">b. It will be displayed as JavaScript text on the browser<br>
+            <input type="radio" name="question14">c. It will throw errors and exceptions<br>
+            <input type="radio" name="question14">d. It must be restricted to a Unix Machine only<br>
+            <button class="next-btn" onclick="next(14)">Next</button>
+        </div>
+        
+        <!-- Question 15 -->
+        <div class="container">
+            <p><span>Q15.</span> Which of the following is not an element associated with the HTML table layout?</p>
+            <input type="radio" name="question15">a. Alignment<br>
+            <input type="radio" name="question15" id="correct15">b. Color<br>
+            <input type="radio" name="question15">c. Size<br>
+            <input type="radio" name="question15">d. Spanning<br>
+            <button class="next-btn" onclick="next(15)">Next</button>
+        </div>
+        
+        <!-- Question 16 -->
+        <div class="container">
+            <p><span>Q16.</span> Which element is used for styling HTML5 layout?</p>
+            <input type="radio" name="question16" id="correct16">a. CSS<br>
+            <input type="radio" name="question16">b. jQuery<br>
+            <input type="radio" name="question16">c. JavaScript<br>
+            <input type="radio" name="question16">d. PHP<br>
+            <button class="next-btn" onclick="next(16)">Next</button>
+        </div>
+        
+        <!-- Question 17 -->
+        <div class="container">
+            <p><span>Q17.</span> HTML is a subset of</p>
+            <input type="radio" name="question17">a. SGMT<br>
+            <input type="radio" name="question17" id="correct17">b. SGML<br>
+            <input type="radio" name="question17">c. SGME<br>
+            <input type="radio" name="question17">d. XHTML<br>
+            <button class="next-btn" onclick="next(17)">Next</button>
+        </div>
+        
+        <!-- Question 18 -->
+        <div class="container">
+            <p><span>Q18.</span> Which of the following CSS property is used to make the text bold?</p>
+            <input type="radio" name="question18">a. text-decoration: bold<br>
+            <input type="radio" name="question18" id="correct18">b. font-weight: bold<br>
+            <input type="radio" name="question18">c. font-style: bold<br>
+            <input type="radio" name="question18">d. text-align: bold<br>
+            <button class="next-btn" onclick="next(18)">Next</button>
+        </div>
+        
+        <!-- Question 19 -->
+        <div class="container">
+            <p><span>Q19.</span> Which of the following CSS style property is used to specify an italic text?</p>
+            <input type="radio" name="question19">a. Style<br>
+            <input type="radio" name="question19">b. Font<br>
+            <input type="radio" name="question19" id="correct19">c. font-style<br>
+            <input type="radio" name="question19">d. @font-face<br>
+            <button class="next-btn" onclick="next(19)">Next</button>
+        </div>
+        
+        <!-- Question 20 -->
+        <div class="container">
+            <p><span>Q20.</span> Which of the following are the CSS Extension Prefixes for Webkit?</p>
+            <input type="radio" name="question20">a. -chrome<br>
+            <input type="radio" name="question20">b. -web<br>
+            <input type="radio" name="question20">c. -o-<br>
+            <input type="radio" name="question20" id="correct20">d. -webkit<br>
+            <button class="next-btn" onclick="next(20)">Next</button>
+        </div>
+        
+        <!-- Question 21 -->
+        <div class="container">
+            <p><span>Q21.</span> Which of the following scoping type does JavaScript use?</p>
+            <input type="radio" name="question21">a. Sequential<br>
+            <input type="radio" name="question21">b. Segmental<br>
+            <input type="radio" name="question21" id="correct21">c. Lexical<br>
+            <input type="radio" name="question21">d. Literal<br>
+            <button class="next-btn" onclick="next(21)">Next</button>
+        </div>
+        
+        <!-- Question 22 -->
+        <div class="container">
+            <p><span>Q22.</span> What is the basic difference between JavaScript and Java?</p>
+            <input type="radio" name="question22">a. Functions are considered as fields<br>
+            <input type="radio" name="question22" id="correct22">b. Functions are values, and there is no hard distinction between methods and fields<br>
+            <input type="radio" name="question22">c. Variables are specific<br>
+            <input type="radio" name="question22">d. There is no difference<br>
+            <button class="next-btn" onclick="next(22)">Next</button>
+        </div>
+        
+        <!-- Question 23 -->
+        <div class="container">
+            <p><span>Q23.</span> Why JavaScript Engine is needed?</p>
+            <input type="radio" name="question23">a. Both Compiling & Interpreting the JavaScript<br>
+            <input type="radio" name="question23">b. Parsing the JavaScript<br>
+            <input type="radio" name="question23" id="correct23">c. Interpreting the JavaScript<br>
+            <input type="radio" name="question23">d. Compiling the JavaScript<br>
+            <button class="next-btn" onclick="next(23)">Next</button>
+        </div>
+        
+        <!-- Question 24 -->
+        <div class="container">
+            <p><span>Q24.</span> Which of the following function defines a linear gradient as a CSS image?</p>
+            <input type="radio" name="question24">a. gradient()<br>
+            <input type="radio" name="question24" id="correct24">b. linear-gradient()<br>
+            <input type="radio" name="question24">c. grayscale()<br>
+            <input type="radio" name="question24">d. image()<br>
+            <button class="next-btn" onclick="next(24)">Next</button>
+        </div>
+        
+        <!-- Question 25 -->
+        <div class="container">
+            <p><span>Q25.</span> Which of the following CSS property can be used to set the image as a border instead of the border style?</p>
+            <input type="radio" name="question25">a. background-image-source<br>
+            <input type="radio" name="question25">b. background-image<br>
+            <input type="radio" name="question25" id="correct25">c. border-image-source<br>
+            <input type="radio" name="question25">d. border-image<br>
+            <button class="next-btn" onclick="next(25)">Next</button>
+        </div>
+        
+        <!-- Question 26 -->
+        <div class="container">
+            <p><span>Q26.</span> Which of the following CSS property defines the different properties of all four sides of an element's border in a single declaration?</p>
+            <input type="radio" name="question26">a. border-collapse<br>
+            <input type="radio" name="question26" id="correct26">b. border-width<br>
+            <input type="radio" name="question26">c. padding<br>
+            <input type="radio" name="question26">d. border<br>
+            <button class="next-btn" onclick="next(26)">Next</button>
+        </div>
+        
+        <!-- Question 27 -->
+        <div class="container">
+            <p><span>Q27.</span> Which of the following is the correct way to apply CSS Styles?</p>
+            <input type="radio" name="question27">a. in an external CSS file<br>
+            <input type="radio" name="question27">b. inside an HTML element<br>
+            <input type="radio" name="question27">c. inside the &lt;head&gt; section of an HTML page<br>
+            <input type="radio" name="question27" id="correct27">d. all of the mentioned<br>
+            <button class="next-btn" onclick="next(27)">Next</button>
+        </div>
+        
+        <!-- Question 28 -->
+        <div class="container">
+            <p><span>Q28.</span> What is the work of &lt;address&gt; element in HTML5?</p>
+            <input type="radio" name="question28">a. contains IP address<br>
+            <input type="radio" name="question28">b. contains home address<br>
+            <input type="radio" name="question28">c. contains URL<br>
+            <input type="radio" name="question28" id="correct28">d. contains contact details for author<br>
+            <button class="next-btn" onclick="next(28)">Next</button>
+        </div>
+        
+        <!-- Question 29 -->
+        <div class="container">
+            <p><span>Q29.</span> Which of the following extension is used to save an HTML file?</p>
+            <input type="radio" name="question29">a. .hl<br>
+            <input type="radio" name="question29">b. .h<br>
+            <input type="radio" name="question29">c. .htl<br>
+            <input type="radio" name="question29" id="correct29">d. .html<br>
+            <button class="next-btn" onclick="next(29)">Next</button>
+        </div>
+        
+        <!-- Question 30 -->
+        <div class="container">
+            <p><span>Q30.</span> What is the use of &lt;hr/&gt; tag in HTML?</p>
+            <input type="radio" name="question30">a. For making content appearance italics<br>
+            <input type="radio" name="question30">b. To create vertical rule between sections<br>
+            <input type="radio" name="question30">c. To create a line break<br>
+            <input type="radio" name="question30" id="correct30">d. To create horizontal rule between sections<br>
+            <button class="next-btn" onclick="next(30)">Next</button>
+        </div>
+        
+        <!-- Question 31 -->
+        <div class="container">
+            <p><span>Q31.</span> Which of the following methods/operation does JavaScript use instead of == and !=?</p>
+            <input type="radio" name="question31">a. JavaScript uses equalto()<br>
+            <input type="radio" name="question31">b. JavaScript uses equals() and notequals() instead<br>
+            <input type="radio" name="question31">c. JavaScript uses bitwise checking<br>
+            <input type="radio" name="question31" id="correct31">d. JavaScript uses === and !== instead<br>
+            <button class="next-btn" onclick="next(31)">Next</button>
+        </div>
+        
+        <!-- Question 32 -->
+        <div class="container">
+            <p><span>Q32.</span> Which of the following CSS property sets the font size of text?</p>
+            <input type="radio" name="question32" id="correct32">a. font-size<br>
+            <input type="radio" name="question32">b. text-size<br>
+            <input type="radio" name="question32">c. text<br>
+            <input type="radio" name="question32">d. size<br>
+            <button class="next-btn" onclick="next(32)">Next</button>
+        </div>
+        
+        <!-- Question 33 -->
+        <div class="container">
+            <p><span>Q33.</span> Which of the following is not the property of the CSS box model?</p>
+            <input type="radio" name="question33">a. Margin<br>
+            <input type="radio" name="question33" id="correct33">b. Color<br>
+            <input type="radio" name="question33">c. Width<br>
+            <input type="radio" name="question33">d. Height<br>
+            <button class="next-btn" onclick="next(33)">Next</button>
+        </div>
+        
+        <!-- Question 34 -->
+        <div class="container">
+            <p><span>Q34.</span> Why are event handlers needed in JS?</p>
+            <input type="radio" name="question34" id="correct34">a. Allows JavaScript code to alter the behavior of windows<br>
+            <input type="radio" name="question34">b. Adds innerHTML page to the code<br>
+            <input type="radio" name="question34">c. Performs handling of exceptions and occurrences<br>
+            <input type="radio" name="question34">d. Adds innerHTML page to the code<br>
+            <button class="next-btn" onclick="next(34)">Next</button>
+        </div>
+        
+        <!-- Question 35 -->
+        <div class="container">
+            <p><span>Q35.</span> Which of the following is not a framework?</p>
+            <input type="radio" name="question35">a. JavaScript .NET<br>
+            <input type="radio" name="question35" id="correct35">b. JavaScript<br>
+            <input type="radio" name="question35">c. Cocoa JS<br>
+            <input type="radio" name="question35">d. jQuery<br>
+            <button class="next-btn" onclick="next(35)">Next</button>
+        </div>
+        
+        <!-- Question 36 -->
+        <div class="container">
+            <p><span>Q36.</span> Which of the following is the property that is triggered in response to JS errors?</p>
+            <input type="radio" name="question36">a. Onclick<br>
+            <input type="radio" name="question36" id="correct36">b. Onerror<br>
+            <input type="radio" name="question36">c. Onmessage<br>
+            <input type="radio" name="question36">d. Onexception<br>
+            <button class="next-btn" onclick="next(36)">Next</button>
+        </div>
+        
+        <!-- Question 37 -->
+        <div class="container">
+            <p><span>Q37.</span> Which of the following is not an error in JavaScript?</p>
+            <input type="radio" name="question37">a. Missing of Bracket<br>
+            <input type="radio" name="question37" id="correct37">b. Division by zero<br>
+            <input type="radio" name="question37">c. Syntax error<br>
+            <input type="radio" name="question37">d. Missing of semicolons<br>
+            <button class="next-btn" onclick="next(37)">Next</button>
+        </div>
+        
+        <!-- Question 38 -->
+        <div class="container">
+            <p><span>Q38.</span> Which of the following CSS property sets what kind of line decorations are added to an element, such as underlines, overlines, etc?</p>
+            <input type="radio" name="question38">a. text-decoration<br>
+            <input type="radio" name="question38">b. text-style<br>
+            <input type="radio" name="question38" id="correct38">c. text-decoration-line<br>
+            <input type="radio" name="question38">d. text-line<br>
+            <button class="next-btn" onclick="next(38)">Next</button>
+        </div>
+        
+        <!-- Question 39 -->
+        <div class="container">
+            <p><span>Q39.</span> Which of the following CSS property specifies the look and design of an outline?</p>
+            <input type="radio" name="question39" id="correct39">a. outline-style<br>
+            <input type="radio" name="question39">b. outline-format<br>
+            <input type="radio" name="question39">c. outline-font<br>
+            <input type="radio" name="question39">d. none of the mentioned<br>
+            <button class="next-btn" onclick="next(39)">Next</button>
+        </div>
+        
+        <!-- Question 40 -->
+        <div class="container">
+            <p><span>Q40.</span> Which of the following CSS property sets the shadow for a box element?</p>
+            <input type="radio" name="question40">a. set-shadow<br>
+            <input type="radio" name="question40" id="correct40">b. box-shadow<br>
+            <input type="radio" name="question40">c. shadow<br>
+            <input type="radio" name="question40">d. canvas-shadow<br>
+            <button class="next-btn" onclick="next(40)">Next</button>
+        </div>        
+    
+        <!-- Question 41 -->
+        <div class="container">
+            <p><span>Q41.</span> Which attribute is not essential under &lt;iframe&gt;?</p>
+            <input type="radio" name="question41" id="correct41">a. Frameborder<br>
+            <input type="radio" name="question41">b. Width<br>
+            <input type="radio" name="question41">c. Height<br>
+            <input type="radio" name="question41">d. src<br>
+            <button class="next-btn" onclick="next(41)">Next</button>
+        </div>
+    
+        <!-- Question 42 -->
+        <div class="container">
+            <p><span>Q42.</span> Which attribute specifies a unique alphanumeric identifier to be associated with an element?</p>
+            <input type="radio" name="question42">a. Type<br>
+            <input type="radio" name="question42">b. Article<br>
+            <input type="radio" name="question42" id="correct42">c. Id<br>
+            <input type="radio" name="question42">d. class<br>
+            <button class="next-btn" onclick="next(42)">Next</button>
+        </div>
+    
+        <!-- Question 43 -->
+        <div class="container">
+            <p><span>Q43.</span> Which of the following is an HTML specification used to add more information to HTML tags?</p>
+            <input type="radio" name="question43">a. Modifydata<br>
+            <input type="radio" name="question43">b. Minidata<br>
+            <input type="radio" name="question43">c. Macrodata<br>
+            <input type="radio" name="question43" id="correct43">d. Microdata<br>
+            <button class="next-btn" onclick="next(43)">Next</button>
+        </div>
+    
+        <!-- Question 44 -->
+        <div class="container">
+            <p><span>Q44.</span> How many standard color names does HTML support?</p>
+            <input type="radio" name="question44">a. 120<br>
+            <input type="radio" name="question44">b. 130<br>
+            <input type="radio" name="question44" id="correct44">c. 140<br>
+            <input type="radio" name="question44">d. 90<br>
+            <button class="next-btn" onclick="next(44)">Next</button>
+        </div>
+    
+        <!-- Question 45 -->
+        <div class="container">
+            <p><span>Q45.</span> What are the three important manipulations done in a for loop on a loop variable?</p>
+            <input type="radio" name="question45">a. Updation, Incrementation, Initialization<br>
+            <input type="radio" name="question45" id="correct45">b. Initialization, Testing, Updation<br>
+            <input type="radio" name="question45">c. Testing, Updation, Testing<br>
+            <input type="radio" name="question45">d. Initialization, Testing, Incrementation<br>
+            <button class="next-btn" onclick="next(45)">Next</button>
+        </div>
+    
+        <!-- Question 46 -->
+        <div class="container">
+            <p><span>Q46.</span> What will happen if the body of a for/in loop deletes a property that has not yet been enumerated?</p>
+            <input type="radio" name="question46">a. The property will be stored in a cache<br>
+            <input type="radio" name="question46">b. The loop will not run<br>
+            <input type="radio" name="question46" id="correct46">c. That property will not be enumerated<br>
+            <input type="radio" name="question46">d. The property will be enumerated<br>
+            <button class="next-btn" onclick="next(46)">Next</button>
+        </div>
+    
+        <!-- Question 47 -->
+        <div class="container">
+            <p><span>Q47.</span> The type of a variable that is volatile is</p>
+            <input type="radio" name="question47">a. Volatile variable<br>
+            <input type="radio" name="question47" id="correct47">b. Mutable variable<br>
+            <input type="radio" name="question47">c. Immutable variable<br>
+            <input type="radio" name="question47">d. Dynamic variable<br>
+            <button class="next-btn" onclick="next(47)">Next</button>
+        </div>
+    
+        <!-- Question 48 -->
+        <div class="container">
+            <p><span>Q48.</span> JavaScript _________ when there is an indefinite or an infinite value during an arithmetic computation.</p>
+            <input type="radio" name="question48">a. Prints an exception error<br>
+            <input type="radio" name="question48">b. Prints an overflow error<br>
+            <input type="radio" name="question48" id="correct48">c. Displays "Infinity"<br>
+            <input type="radio" name="question48">d. Prints the value as such<br>
+            <button class="next-btn" onclick="next(48)">Next</button>
+        </div>
+    
+        <!-- Question 49 -->
+        <div class="container">
+            <p><span>Q49.</span> Which of the following CSS property is used to set the color of the text?</p>
+            <input type="radio" name="question49">a. text-decoration<br>
+            <input type="radio" name="question49">b. pallet<br>
+            <input type="radio" name="question49" id="correct49">c. color<br>
+            <input type="radio" name="question49">d. colour <br>
+            <button class="next-btn" onclick="next(49)">Next</button>
+        </div>
+    
+        <!-- Question 50 -->
+        <div class="container">
+            <p><span>Q50.</span> Which of the following CSS Property controls how an element is positioned?</p>
+            <input type="radio" name="question50">a. Static<br>
+            <input type="radio" name="question50" id="correct50">b. Position<br>
+            <input type="radio" name="question50">c. Fix<br>
+            <input type="radio" name="question50">d. set<br>
+            <button class="next-btn" onclick="next(50)">Next</button>
+        </div>
+    
+        <!-- Question 51 -->
+        <div class="container">
+            <p><span>Q51.</span> Which of the following is an appropriate value for the overflow element?</p>
+            <input type="radio" name="question51">a. Scroll<br>
+            <input type="radio" name="question51">b. Hidden<br>
+            <input type="radio" name="question51">c. Auto<br>
+            <input type="radio" name="question51" id="correct51">d. All of the mentioned<br>
+            <button class="next-btn" onclick="next(51)">Next</button>
+        </div>
+    
+        <!-- Question 52 -->
+        <div class="container">
+            <p><span>Q52.</span> Which of the following is not set with the font-style property?</p>
+            <input type="radio" name="question52">a. font-style: normal<br>
+            <input type="radio" name="question52">b. font-style: italic<br>
+            <input type="radio" name="question52">c. font-style: oblique<br>
+            <input type="radio" name="question52" id="correct52">d. font-style: capitalize<br>
+            <button class="next-btn" onclick="next(52)">Next</button>
+        </div>
+    
+        <!-- Question 53 -->
+        <div class="container">
+            <p><span>Q53.</span> What should be set with the text-align property so that every line has equal width like in magazines and newspapers?</p>
+            <input type="radio" name="question53" id="correct53">a. text-align: justify<br>
+            <input type="radio" name="question53">b. text-align: none<br>
+            <input type="radio" name="question53">c. text-align: bottom<br>
+            <input type="radio" name="question53">d. text-align: top<br>
+            <button class="next-btn" onclick="next(53)">Next</button>
+        </div>
+    
+        <!-- Question 54 -->
+        <div class="container">
+            <p><span>Q54.</span> Which of the following is not used with the text-decoration property?</p>
+            <input type="radio" name="question54">a. Overline<br>
+            <input type="radio" name="question54">b. Underline<br>
+            <input type="radio" name="question54">c. Line-through<br>
+            <input type="radio" name="question54" id="correct54">d. Inline<br>
+            <button class="next-btn" onclick="next(54)">Next</button>
+        </div>
+    
+        <!-- Question 55 -->
+        <div class="container">
+            <p><span>Q55.</span> Which of the following is the correct way to apply CSS Styles?</p>
+            <input type="radio" name="question55" id="correct55">a. In an external CSS file<br>
+            <input type="radio" name="question55">b. Inside an HTML element<br>
+            <input type="radio" name="question55">c. Inside the &lt;head&gt; section of an HTML page<br>
+            <input type="radio" name="question55">d. All of the mentioned<br>
+            <button class="next-btn" onclick="next(55)">Next</button>
+        </div>
+    
+        <!-- Question 56 -->
+        <div class="container">
+            <p><span>Q56.</span> What is the work of &lt;address&gt; element in HTML5?</p>
+            <input type="radio" name="question56">a. Contains IP address<br>
+            <input type="radio" name="question56" id="correct56">b. Contains home address<br>
+            <input type="radio" name="question56">c. Contains URL<br>
+            <input type="radio" name="question56">d. Contains contact details for author<br>
+            <button class="next-btn" onclick="next(56)">Next</button>
+        </div>
+    
+        <!-- Question 57 -->
+        <div class="container">
+            <p><span>Q57.</span> Which of the following extension is used to save an HTML file?</p>
+            <input type="radio" name="question57">a. .hl<br>
+            <input type="radio" name="question57">b. .h<br>
+            <input type="radio" name="question57">c. .htl<br>
+            <input type="radio" name="question57" id="correct57">d. .html<br>
+            <button class="next-btn" onclick="next(57)">Next</button>
+        </div>
+    
+        <!-- Question 58 -->
+        <div class="container">
+            <p><span>Q58.</span> What is the use of &lt;hr/&gt; tag in HTML?</p>
+            <input type="radio" name="question58">a. For making content appearance italics<br>
+            <input type="radio" name="question58" id="correct58">b. To create a vertical rule between sections<br>
+            <input type="radio" name="question58">c. To create a line break<br>
+            <input type="radio" name="question58">d. To create a horizontal rule between sections<br>
+            <button class="next-btn" onclick="next(58)">Next</button>
+        </div>
+    
+        <!-- Question 59 -->
+        <div class="container">
+            <p><span>Q59.</span> Which of the following methods/operations does JavaScript use instead of == and !=?</p>
+            <input type="radio" name="question59" id="correct59">a. JavaScript uses equalto()<br>
+            <input type="radio" name="question59">b. JavaScript uses equals() and notequals() instead<br>
+            <input type="radio" name="question59">c. JavaScript uses bitwise checking<br>
+            <input type="radio" name="question59">d. JavaScript uses === and !== instead<br>
+            <button class="next-btn" onclick="next(59)">Next</button>
+        </div>
+    
+        <!-- Question 60 -->
+        <div class="container">
+            <p><span>Q60.</span> Which of the following CSS property sets the font size of text?</p>
+            <input type="radio" name="question60">a. font-size<br>
+            <input type="radio" name="question60">b. text-size<br>
+            <input type="radio" name="question60" id="correct60">c. text<br>
+            <input type="radio" name="question60">d. size<br>
+            <button class="next-btn" onclick="next(60)">Next</button>
+        </div>
+    
+        <!-- Question 61 -->
+        <div class="container">
+            <p><span>Q61.</span> Which of the following is not the property of the CSS box model?</p>
+            <input type="radio" name="question61" id="correct61">a. Margin<br>
+            <input type="radio" name="question61">b. Color<br>
+            <input type="radio" name="question61">c. Width<br>
+            <input type="radio" name="question61">d. Height<br>
+            <button class="next-btn" onclick="next(61)">Next</button>
+        </div>
+    
+        <!-- Question 62 -->
+        <div class="container">
+            <p><span>Q62.</span> Why are event handlers needed in JS?</p>
+            <input type="radio" name="question62">a. Allows JavaScript code to alter the behavior of windows<br>
+            <input type="radio" name="question62">b. Adds innerHTML page to the code<br>
+            <input type="radio" name="question62">c. Performs handling of exceptions and occurrences<br>
+            <input type="radio" name="question62" id="correct62">d. Adds innerHTML page to the code<br>
+            <button class="next-btn" onclick="next(62)">Next</button>
+        </div>
+    
+        <!-- Question 63 -->
+        <div class="container">
+            <p><span>Q63.</span> Which of the following is not a framework?</p>
+            <input type="radio" name="question63">a. JavaScript .NET<br>
+            <input type="radio" name="question63">b. JavaScript<br>
+            <input type="radio" name="question63">c. Cocoa JS<br>
+            <input type="radio" name="question63" id="correct63">d. jQuery<br>
+            <button class="next-btn" onclick="next(63)">Next</button>
+        </div>
+    
+        <!-- Question 64 -->
+        <div class="container">
+            <p><span>Q64.</span> Which of the following is the property that is triggered in response to JS errors?</p>
+            <input type="radio" name="question64">a. Onclick<br>
+            <input type="radio" name="question64">b. Onerror<br>
+            <input type="radio" name="question64">c. Onmessage<br>
+            <input type="radio" name="question64" id="correct64">d. Onexception<br>
+            <button class="next-btn" onclick="next(64)">Next</button>
+        </div>
+    
+        <!-- Question 65 -->
+        <div class="container" id="question65">
+            <p><span>Q65.</span> Which of the following is not an error in JavaScript?</p>
+            <input type="radio" name="question65">a. Missing of Bracket<br>
+            <input type="radio" name="question65">b. Division by zero<br>
+            <input type="radio" name="question65">c. Syntax error<br>
+            <input type="radio" name="question65" id="correct65">d. Missing of semicolons<br>
+            <button class="submit-btn" onclick="displayScore()">Submit</button><br>
+        </div>
+
+        <div class="container" id="resultDiv" style="display: none;">
+            <h1 id="greeting"></h1>
+            <p><span>Your Score:</span></p>
+            <p id="result"></p>
+            <p><span>Percentage:</span></p>
+            <p id="Percentage"></p>
+            <a href="../topic/topics.html" class="close-button">Close</a>
+        </div>
+      
+    </div>
+    
+    <!-- end of Questions -->
+    <script src="../../js/script.js"></script>
+</body>
+</html>

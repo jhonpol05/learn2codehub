@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2cd579dbd9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Learn2CodeHub</title>
+</head>
+<body>
+    <!-- start of header  -->
+    <header>
+        <div class="logo">
+            <h1>Learn2CodeHub</h1>
+        </div>
+        <input type="checkbox" id="Mobile_Menu">
+        <label for="Mobile_Menu" id="Mobile_Menu">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav>
+            <ul>
+                <label for="Mobile_Menu" id="Mobile_Menu_exit">
+                    <i class="fa-solid fa-xmark"></i>
+                </label>
+                <li><a href="#home"><i class="fa-sharp fa-solid fa-house" style="color: #ffffff;"></i>Home</a></li>
+                <li><a href="#about"><i class="fa-solid fa-user" style="color: #ffffff;"></i>About</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-phone" style="color: #ffffff;"></i>Contact</a></li>
+                <li><a href="assets/topic/topics.html"><i class="fa-solid fa-book-open-reader" style="color: #ffffff;"></i>Tutorials</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End of header  -->
+
+    <!-- start of home section  -->
+    <section class="home-section" id="home">
+        <div class="home-content">
+            <div class="description">
+                <h2>Welcome to Learn2CodeHub!</h2>
+                <p>Learn more about Web Development and enhance your skills in <span>HTML, CSS, and JavaScript</span> for free. </p>
+                <a href="assets/topic/topics.html">Get Started</a>
+            </div>
+            <div class="section-img">
+                <img src="img/content.png">
+            </div>
+        </div>
+    </section>
+    <!-- end of home section -->
+    
+    <!-- start of about section -->
+    <section class="about-section" id="about">
+        <div class="about-content">
+            <h1>About Us</h1>
+            <p>Learn2CodeHub is an exciting online platform designed for individuals who want to learn web design and programming languages such as HTML, CSS, and Javascript. Our comprehensive courses are designed to help beginners as well as advanced learners to build a strong foundation in web design and development.
+            <p>Whether you are interested in pursuing a career in web design or simply want to learn a new skill, Learn2CodeHub is the perfect platform to achieve your goals. Join us today and take the first step towards mastering web design and programming languages.</p>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </section>
+    <!-- end of about section -->
+
+    <!-- start Contact us section -->
+    <section class="contact-section" id="contact">
+        <div class="contact_container">
+            <h1>Contact Us</h1>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Let's get in touch</h3>
+                    <p>Were open for any suggestion or just to have a chat.</p>
+                    <table>
+                        <tr>
+                            <td><i class="fa-solid fa-envelope" style="color: #ffffff;"></i>Email:</td>
+                            <td>Learn2CodeHub@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-phone" style="color: #ffffff;"></i>Phone:</td>
+                            <td>+63 565581**8</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i>Address:</td>
+                            <td>Manoot, Rizal, Occidental Mindoro, 5103</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="contact-right">
+                    <h3>Sent your request</h3>
+                    <form>
+                        <div class="input-table">
+                            <div class="input-group">
+                                
+                                <input type="text" id="name" placeholder="FULL NAME">
+                            </div>
+                            <div class="input-group">
+                
+                                <input type="email" placeholder="EMAIL ADDRESS">
+                            </div>   
+                                                 
+                        </div>
+                        <div class="input-table">
+                            <div class="input-group">
+                                <input type="text" id="" placeholder="SUBJECT">
+                            </div>
+                        </div>
+                        <textarea rows="5" placeholder="Please type your message"></textarea>
+
+                        <button class="submit_btn">Send Message</button>
+                    </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- end Contact us section -->
+
+    <footer>
+        &copy; <script>document.write(new Date().getFullYear())</script> Learn2CodeHub. All rights reserved.
+    </footer>
+
+</body>
+</html>
