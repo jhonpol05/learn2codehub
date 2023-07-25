@@ -94,6 +94,7 @@ section{
     border-radius: 30px;
     padding: 10px 10px 10px 10px;
     text-decoration: none;
+    cursor: pointer;
 }
 .description a:hover{
     color: black;
@@ -144,6 +145,7 @@ img{
     padding: 10px 20px 11px 20px;
     text-decoration: none;
     margin: 20px 0 20px 0;
+    cursor: pointer;
 }
 .about-content a:hover{
     color: black;
@@ -248,6 +250,7 @@ button{
     border-radius: 30px;
     margin-top: 14px;
     box-shadow: 0px 5px 15px 0px rgb(0, 102, 255,0.3);
+    cursor: pointer;
 }
 button:hover{
     background-color: #fff;
@@ -366,7 +369,7 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin: 70px 0px 0px 0px;
+        margin: 96px 0px 0px 0px;
     }
     .about-content p{
         margin: 20px 40px 0 40px;

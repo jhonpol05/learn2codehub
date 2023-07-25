@@ -58,7 +58,7 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 16vh;
+    margin-top: 22vh;
   }
   
   .container {
@@ -201,6 +201,9 @@ nav ul li a:hover{
     /* responsive nav bar end */
 
     /* responsive question box start */
+    .questions{
+        margin-top: 16vh;
+    }
     .container{
         width: 100%;
         min-height: 90vh;
